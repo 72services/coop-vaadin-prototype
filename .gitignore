@@ -1,3 +1,10 @@
 /coop-vaadin/target/
 /coop-vaadin/coop-vaadin.iml
 /.idea/
+/coop-starter/coop-starter.iml
+/coop-starter/greeter-library/greeter-library.iml
+/coop-starter/greeter-library/target/
+/coop-starter/greeter-spring-boot-autoconfigure/target/
+/coop-starter/greeter-spring-boot-starter/target/
+/coop-starter/greeter-spring-boot-autoconfigure/greeter-spring-boot-autoconfigure.iml
+/coop-starter/greeter-spring-boot-starter/greeter-spring-boot-starter.iml
