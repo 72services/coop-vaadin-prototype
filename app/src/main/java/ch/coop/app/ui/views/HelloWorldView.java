@@ -19,8 +19,11 @@ public class HelloWorldView extends VerticalLayout {
         setMargin(true);
 
         TextField name = new TextField("Your name");
+        name.setId("hello-world-name");
         H1 text = new H1();
+        text.setId("hello-world-text");
         Button sayHello = new Button("Say hello", e -> text.setText(greeter.greet(name.getValue())));
+        sayHello.setId("hello-world-say-hello");
 
         add(name, sayHello, text);
 
