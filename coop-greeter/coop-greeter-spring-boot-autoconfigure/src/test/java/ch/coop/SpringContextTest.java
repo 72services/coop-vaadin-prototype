@@ -10,6 +10,6 @@ import org.springframework.test.context.ContextConfiguration;
 public class SpringContextTest {
 
     @Test
-    public void whenSpringContextIsBootstrappedthenNoExceptionIsThrown() {
+    public void whenSpringContextIsBootstrapped_thenNoExceptionIsThrown() {
     }
 }

@@ -19,13 +19,13 @@ public class Greeter {
         int hourOfDay = localDateTime.getHour();
 
         if (hourOfDay >= 5 && hourOfDay < 12) {
-            return String.format("Hello %s, %s", name, greetingConfig.get(MORNING_MESSAGE));
+            return String.format("%s, %s", greetingConfig.get(MORNING_MESSAGE), name);
         } else if (hourOfDay >= 12 && hourOfDay < 17) {
-            return String.format("Hello %s, %s", name, greetingConfig.get(AFTERNOON_MESSAGE));
+            return String.format("%s, %s", greetingConfig.get(AFTERNOON_MESSAGE), name);
         } else if (hourOfDay >= 17 && hourOfDay < 20) {
-            return String.format("Hello %s, %s", name, greetingConfig.get(EVENING_MESSAGE));
+            return String.format("%s, %s", greetingConfig.get(EVENING_MESSAGE), name);
         } else {
-            return String.format("Hello %s, %s", name, greetingConfig.get(NIGHT_MESSAGE));
+            return String.format("%s, %s", greetingConfig.get(NIGHT_MESSAGE), name);
         }
     }
 

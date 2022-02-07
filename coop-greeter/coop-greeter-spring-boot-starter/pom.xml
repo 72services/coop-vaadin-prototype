@@ -5,44 +5,30 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ch.coop</groupId>
-    <artifactId>greeter-spring-boot-autoconfigure</artifactId>
+    <artifactId>coop-greeter-spring-boot-starter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
         <java.version>11</java.version>
-        <spring-boot.version>2.6.3</spring-boot.version>
         <greeter.version>0.0.1-SNAPSHOT</greeter.version>
+        <spring-boot.version>2.6.3</spring-boot.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
             <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>${spring-boot.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <version>${spring-boot.version}</version>
-            <optional>true</optional>
+            <groupId>ch.coop</groupId>
+            <artifactId>greeter-spring-boot-autoconfigure</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>ch.coop</groupId>
             <artifactId>greeter-library</artifactId>
             <version>${greeter.version}</version>
-            <optional>true</optional>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>${spring-boot.version}</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -59,5 +45,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

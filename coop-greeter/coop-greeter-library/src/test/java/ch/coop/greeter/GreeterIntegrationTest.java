@@ -18,7 +18,7 @@ public class GreeterIntegrationTest {
     private static GreetingConfig greetingConfig;
 
     @BeforeAll
-    public static void initalizeGreetingConfig() {
+    public static void initializeGreetingConfig() {
         greetingConfig = new GreetingConfig();
         greetingConfig.put(MORNING_MESSAGE, "Good Morning");
         greetingConfig.put(AFTERNOON_MESSAGE, "Good Afternoon");
@@ -28,7 +28,7 @@ public class GreeterIntegrationTest {
 
     @Test
     public void givenMorningTime_ifMorningMessage_thenSuccess() {
-        String expected = "Hello World, Good Morning";
+        String expected = "Good Morning, Max";
         Greeter greeter = new Greeter(greetingConfig);
         String actual = greeter.greet(LocalDateTime.of(2017, 3, 1, 6, 0), "Max");
         assertEquals(expected, actual);
@@ -36,7 +36,7 @@ public class GreeterIntegrationTest {
 
     @Test
     public void givenAfternoonTime_ifAfternoonMessage_thenSuccess() {
-        String expected = "Hello World, Good Afternoon";
+        String expected = "Good Afternoon, Max";
         Greeter greeter = new Greeter(greetingConfig);
         String actual = greeter.greet(LocalDateTime.of(2017, 3, 1, 13, 0), "Max");
         assertEquals(expected, actual);
@@ -44,7 +44,7 @@ public class GreeterIntegrationTest {
 
     @Test
     public void givenEveningTime_ifEveningMessage_thenSuccess() {
-        String expected = "Hello World, Good Evening";
+        String expected = "Good Evening, Max";
         Greeter greeter = new Greeter(greetingConfig);
         String actual = greeter.greet(LocalDateTime.of(2017, 3, 1, 19, 0), "Max");
         assertEquals(expected, actual);
@@ -52,7 +52,7 @@ public class GreeterIntegrationTest {
 
     @Test
     public void givenNightTime_ifNightMessage_thenSuccess() {
-        String expected = "Hello World, Good Night";
+        String expected = "Good Night, Max";
         Greeter greeter = new Greeter(greetingConfig);
         String actual = greeter.greet(LocalDateTime.of(2017, 3, 1, 21, 0), "Max");
         assertEquals(expected, actual);

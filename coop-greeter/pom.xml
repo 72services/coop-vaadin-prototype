@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ch.coop</groupId>
-    <artifactId>coop-starter</artifactId>
+    <artifactId>coop-greeter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>greeter-library</module>
-        <module>greeter-spring-boot-autoconfigure</module>
-        <module>greeter-spring-boot-starter</module>
+        <module>coop-greeter-library</module>
+        <module>coop-greeter-spring-boot-autoconfigure</module>
+        <module>coop-greeter-spring-boot-starter</module>
     </modules>
 
 </project>

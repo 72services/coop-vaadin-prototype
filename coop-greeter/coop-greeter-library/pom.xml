@@ -5,30 +5,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ch.coop</groupId>
-    <artifactId>greeter-spring-boot-starter</artifactId>
+    <artifactId>coop-greeter-library</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
         <java.version>11</java.version>
-        <greeter.version>0.0.1-SNAPSHOT</greeter.version>
-        <spring-boot.version>2.6.3</spring-boot.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-            <version>${spring-boot.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>ch.coop</groupId>
-            <artifactId>greeter-spring-boot-autoconfigure</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>ch.coop</groupId>
-            <artifactId>greeter-library</artifactId>
-            <version>${greeter.version}</version>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.8.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -45,4 +34,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
