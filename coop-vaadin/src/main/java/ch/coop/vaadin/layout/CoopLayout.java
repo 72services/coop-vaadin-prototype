@@ -20,6 +20,7 @@ import com.vaadin.flow.router.RouterLink;
 public class CoopLayout extends AppLayout {
 
     private H1 viewTitle;
+    private H2 userInfo;
     private UnorderedList menuList;
 
     public CoopLayout() {
@@ -37,9 +38,10 @@ public class CoopLayout extends AppLayout {
         viewTitle = new H1();
         viewTitle.addClassNames("m-0", "text-l");
 
-        Header header = new Header(toggle, viewTitle);
-        header.addClassNames("bg-base", "border-b", "border-contrast-10", "box-border", "flex", "h-xl", "items-center",
-                "w-full");
+        userInfo = new H2();
+
+        Header header = new Header(toggle, viewTitle, userInfo);
+        header.addClassNames("bg-base", "border-b", "border-contrast-10", "box-border", "flex", "h-xl", "items-center", "w-full");
         return header;
     }
 
@@ -66,8 +68,12 @@ public class CoopLayout extends AppLayout {
         return nav;
     }
 
-    public void addMenuItem(MenuItemInfo menuItemInfo) {
+    protected void addMenuItem(MenuItemInfo menuItemInfo) {
         menuList.add(menuItemInfo);
+    }
+
+    protected void setUserInfo(String userInfo) {
+        this.userInfo.setText(userInfo);
     }
 
     private Footer createFooter() {
