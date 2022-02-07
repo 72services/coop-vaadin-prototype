@@ -21,12 +21,12 @@
         </dependency>
         <dependency>
             <groupId>ch.coop</groupId>
-            <artifactId>greeter-spring-boot-autoconfigure</artifactId>
+            <artifactId>coop-greeter-spring-boot-autoconfigure</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>ch.coop</groupId>
-            <artifactId>greeter-library</artifactId>
+            <artifactId>coop-greeter-library</artifactId>
             <version>${greeter.version}</version>
         </dependency>
     </dependencies>
